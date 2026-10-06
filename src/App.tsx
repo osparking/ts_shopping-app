@@ -1,5 +1,4 @@
 import "./App.css";
-import logo from "./logo.svg";
 
 function f1<T>(arg: T): T {
   return arg;
