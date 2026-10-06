@@ -1,7 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-로컬 프로젝트 위치: /c/Users/jbpar/vscode_proj/shopping-app
+##로컬 프로젝트 위치: /c/Users/jbpar/vscode_proj/shopping-app
+##프로젝트 생성 명령: npx create-react-app shopping-app --template typescript
 
 ## Available Scripts
 
