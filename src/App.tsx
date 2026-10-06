@@ -1,5 +1,13 @@
-import './App.css';
-import logo from './logo.svg';
+import "./App.css";
+import logo from "./logo.svg";
+
+function f1<T>(arg: T): T {
+  return arg;
+}
+
+const f2 = <T,>(arg: T): T => {
+  return arg;
+};
 
 function App() {
   return (
