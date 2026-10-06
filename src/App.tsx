@@ -12,7 +12,7 @@ const f2 = <T,>(arg: T): T => {
 function App() {
   return (
     <div className="App">
-      <Greeter person="주디"/>
+      <Greeter person="휴지"/>
       <Greeter person="구름이"/>
       <Greeter person="쿠키"/>
     </div>
