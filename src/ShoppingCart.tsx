@@ -1,7 +1,6 @@
 import { JSX } from "react";
 import { Cart } from "./components/models/Carts";
 import "./ShoppingCart.css";
-import ItemEntry from "./components/ItemEntry";
 
 export default function ShoppingCart({ items }: Cart): JSX.Element {
   return (
@@ -14,7 +13,6 @@ export default function ShoppingCart({ items }: Cart): JSX.Element {
           </li>
         ))}
       </ul>
-      <ItemEntry />
     </div>
   );
 }

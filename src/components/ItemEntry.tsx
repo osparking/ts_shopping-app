@@ -1,11 +1,17 @@
 import React, { JSX, useRef, useState } from "react";
 
-function ItemEntry(): JSX.Element {
+interface ItemEntryProps {
+    addItem: (name: string) => void; 
+}
+
+function ItemEntry({addItem}: ItemEntryProps): JSX.Element {
   const inputRef = useRef<HTMLInputElement>(null);
 
   function handleEntry(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log("항목: ", inputRef.current!.value);
+    const productName = inputRef.current!.value;
+    addItem(productName)
+    inputRef.current!.value = "";
   }
 
   return (
