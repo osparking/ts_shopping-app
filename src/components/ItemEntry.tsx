@@ -1,16 +1,11 @@
-import React, { JSX, useState } from "react";
+import React, { JSX, useRef, useState } from "react";
 
 function ItemEntry(): JSX.Element {
-  const [itemName, setItemName] = useState<string>("");
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  function handleEntry(e: React.SubmitEvent) {
+  function handleEntry(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log("폼 제출됨");
-  }
-
-  function changeName(e: React.ChangeEvent<HTMLInputElement>) {
-    setItemName(e.target.value);
-    console.log("이름: ", e.target.value);
+    console.log("항목: ", inputRef.current!.value);
   }
 
   return (
@@ -20,9 +15,8 @@ function ItemEntry(): JSX.Element {
       <form onSubmit={handleEntry}>
         <input
           type="text"
+          ref={inputRef}
           placeholder="항목 이름"
-          value={itemName}
-          onChange={changeName}
           style={{ marginLeft: "10px" }}
         />
         <button type="submit">담기</button>
