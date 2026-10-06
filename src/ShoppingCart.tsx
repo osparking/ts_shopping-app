@@ -1,10 +1,11 @@
 import { JSX } from "react";
 import { Cart } from "./components/models/Carts";
 import "./ShoppingCart.css";
+import ItemEntry from "./components/ItemEntry";
 
 export default function ShoppingCart({ items }: Cart): JSX.Element {
   return (
-    <div>
+    <div style={{ marginLeft: "10px" }}>
       <h1>쇼핑 목록</h1>
       <ul>
         {items.map((item) => (
@@ -13,6 +14,7 @@ export default function ShoppingCart({ items }: Cart): JSX.Element {
           </li>
         ))}
       </ul>
+      <ItemEntry />
     </div>
   );
 }
