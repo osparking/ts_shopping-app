@@ -12,9 +12,9 @@ const f2 = <T,>(arg: T): T => {
 function App() {
   return (
     <div className="App">
-      <Greeter />
-      <Greeter />
-      <Greeter />
+      <Greeter person="주디"/>
+      <Greeter person="구름이"/>
+      <Greeter person="쿠키"/>
     </div>
   );
 }
