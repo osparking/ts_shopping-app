@@ -13,6 +13,8 @@ function App() {
   return (
     <div className="App">
       <Greeter />
+      <Greeter />
+      <Greeter />
     </div>
   );
 }
