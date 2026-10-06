@@ -1,4 +1,5 @@
 import "./App.css";
+import Greeter from "./components/Greeter";
 
 function f1<T>(arg: T): T {
   return arg;
@@ -11,7 +12,7 @@ const f2 = <T,>(arg: T): T => {
 function App() {
   return (
     <div className="App">
-      <p>여러분 안녕??</p>
+      <Greeter />
     </div>
   );
 }
