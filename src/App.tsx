@@ -1,9 +1,6 @@
 import './App.css';
 import logo from './logo.svg';
 
-const num: number = 123;
-console.log("나의 숫자: ", num);
-
 function App() {
   return (
     <div className="App">
