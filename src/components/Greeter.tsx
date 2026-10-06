@@ -1,6 +1,6 @@
-import React from "react";
+import { JSX } from "react";
 
-function Greeter() {
+function Greeter() : JSX.Element {
   return <h1>안녕하세요?</h1>;
 }
 
