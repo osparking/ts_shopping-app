@@ -7,9 +7,9 @@ import ShoppingCart from "./ShoppingCart";
 function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
 
-  const addItem = async (product: string): Promise<void> => {
+  const addItem = async (product: string, quantity: number): Promise<void> => {
     const { v4: uuidv4 } = await import("uuid");
-    const item: CartItem = { id: uuidv4(), product, quantity: 1 };
+    const item: CartItem = { id: uuidv4(), product, quantity: quantity };
     setCart((prev) => [...prev, item]);
   };
 
